@@ -1,0 +1,65 @@
+no_sf_pu * 'ewk_z'
+    'ewk_w'
+    'wkfactor'
+    'zkfactor'
+    'sf_tt'
+    'mc_weight'
+    'pdf'
+mcweight_nobtag * no_sf_pu
+    'sf_pu'
+jetpt && 'daughter_max_pt > 60'
+    'daughter_min_pt > 35'
+leptons && 'n_lep_tight > 0'
+    'n_lep_loose == 2'
+n_jets && 'n_jet == 2'
+trig && 'met_trigger'
+common && jetpt
+    leptons
+    n_jets
+tt && common
+    'tag_deepCSVb > 0.6'
+    !dimuon
+    !diele
+    'pfmet > 100'
+z && common
+    'tag_deepCSVb < 0.4'
+    dimuon
+notrig && '1'
+dimuon && 'muon2 + muon1 == 2'
+    '!ele1'
+    'dimuon_m > 60'
+    'dimuon_m < 120'
+diele && 'ele2 + ele1 == 2'
+    '!muon1'
+    'diele_m > 60'
+    'diele_m < 120'
+pt_0_100 && 'probe_pt <= 100'
+pt_100_200 && 'probe_pt > 100'
+    'probe_pt <= 200'
+pt_200_300 && 'probe_pt > 200'
+    'probe_pt <= 300'
+pt_300_inf && 'probe_pt > 300'
+heavy_pt_0_100 && tt
+    pt_0_100
+heavy_pt_100_200 && tt
+    pt_100_200
+heavy_pt_200_300 && tt
+    pt_200_300
+heavy_pt_300_inf && tt
+    pt_300_inf
+light_pt_0_100 && tt
+    pt_0_100
+light_pt_100_200 && z
+    pt_100_200
+light_pt_200_300 && z
+    pt_200_300
+light_pt_300_inf && z
+    pt_300_inf
+: heavy_pt_0_100 notrig mcweight_nobtag
+: heavy_pt_100_200 notrig mcweight_nobtag
+: heavy_pt_200_300 notrig mcweight_nobtag
+: heavy_pt_300_inf notrig mcweight_nobtag
+: light_pt_0_100 notrig mcweight_nobtag
+: light_pt_100_200 notrig mcweight_nobtag
+: light_pt_200_300 notrig mcweight_nobtag
+: light_pt_300_inf notrig mcweight_nobtag

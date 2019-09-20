@@ -1,0 +1,12 @@
+mcweight * 'sf_pu'
+    'sf_met_trigger'
+    'ewk_z'
+    'ewk_w'
+    'wkfactor'
+    'zkfactor'
+    'vh_ewk'
+    'sf_tt'
+    'mc_weight'
+    'pdf'
+    'btag_sf'
+: tt mcweight trig

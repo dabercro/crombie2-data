@@ -1,0 +1,8 @@
+'jet1_puppi_charged_pt/jet1_pt', 20, 0, 1, 'Charged PUPPI $p_{T}$ Fraction'
+'jet1_puppi_charged_pu_pt/jet1_pt', 20, 0, 1, 'Charged Pileup PUPPI $p_{T}$ Fraction'
+'jet1_puppi_neutral_pt/jet1_pt', 20, 0, 1, 'Neutral PUPPI $p_{T}$ Fraction'
+'jet1_puppi_neutral_pu_pt/jet1_pt', 20, 0, 1, 'Neutral Pileup PUPPI $p_{T}$ Fraction'
+'jet2_puppi_charged_pt/jet2_pt', 20, 0, 1, 'Charged PUPPI $p_{T}$ Fraction'
+'jet2_puppi_charged_pu_pt/jet2_pt', 20, 0, 1, 'Charged Pileup PUPPI $p_{T}$ Fraction'
+'jet2_puppi_neutral_pt/jet2_pt', 20, 0, 1, 'Neutral PUPPI $p_{T}$ Fraction'
+'jet2_puppi_neutral_pu_pt/jet2_pt', 20, 0, 1, 'Neutral Pileup PUPPI $p_{T}$ Fraction'

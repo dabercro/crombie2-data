@@ -1,0 +1,34 @@
+mcweight * 'weight'
+leptons && 'lep1_corrpt > 20'
+    'lep2_corrpt > 20'
+    '(lep1_q + lep2_q) == 0'
+    'dilep_corr_pt > 30'
+    'lep1_ismuon'
+    'lep2_ismuon'
+iso && 'lep1_minireliso < 0.25'
+    'lep2_minireliso < 0.25'
+smearplot && leptons
+    iso
+    jet
+trig && 'trigger_mu'
+jet && 'fabs(jet1_eta) < 2.0'
+    'jet2_pt/dilep_corr_pt < 0.3'
+    'jet1_pt > 50'
+    'jet2_dphi_ll > 2.8'
+    'jet1_dphi_ll > 2.8'
+    'jet1_deepCSV > 0.4'
+alpha_1 && 'jet2_pt/dilep_corr_pt < 0.185'
+alpha_2 && 'jet2_pt/dilep_corr_pt < 0.245'
+    'jet2_pt/dilep_corr_pt >= 0.185'
+alpha_3 && 'jet2_pt/dilep_corr_pt < 0.3'
+    'jet2_pt/dilep_corr_pt >= 0.245'
+smearplot_1 && alpha_1
+    smearplot
+smearplot_2 && alpha_2
+    smearplot
+smearplot_3 && alpha_3
+    smearplot
+: smearplot trig mcweight , 
+: smearplot_1 trig mcweight , 
+: smearplot_2 trig mcweight , 
+: smearplot_3 trig mcweight , 

@@ -1,0 +1,63 @@
+no_sf_pu * 'ewk_z'
+    'ewk_w'
+    'wkfactor'
+    'zkfactor'
+    'sf_tt'
+    'mc_weight'
+    'pdf'
+mcweight_nobtag * no_sf_pu
+    'sf_pu'
+jetpt && 'daughter_max_pt > 60'
+    'daughter_min_pt > 35'
+leptons && 'n_lep_tight > 0'
+    'n_lep_loose == 2'
+n_jets && 'n_jet == 2'
+trig && 'met_trigger'
+common && jetpt
+    leptons
+    n_jets
+tt && common
+    'tag_deepCSV > 0.6'
+    !dimuon
+    !diele
+    'pfmet > 100'
+z && common
+    'tag_deepCSV < 0.4'
+    dimuon
+notrig && '1'
+dimuon && 'muon2 + muon1 == 2'
+    '!ele1'
+    'dimuon_m > 60'
+    'dimuon_m < 120'
+diele && 'ele2 + ele1 == 2'
+    '!muon1'
+    'diele_m > 60'
+    'diele_m < 120'
+pt_0_150 && 'probe_pt <= 150'
+pt_150_250 && 'probe_pt > 150'
+    'probe_pt <= 250'
+pt_250_inf && 'probe_pt > 250'
+eta_0_1p4 && 'abs(probe_eta) < 1.4'
+eta_1p4_2p5 && 'abs(probe_eta) >= 1.4'
+heavy_pt_0_150 && tt
+    pt_0_150
+heavy_pt_150_250 && tt
+    pt_150_250
+heavy_pt_250_inf && tt
+    pt_250_inf
+light_pt_0_150 && z
+    pt_0_150
+light_pt_150_250 && z
+    pt_150_250
+light_pt_250_inf && z
+    pt_250_inf
+mcweight_heavyb * mcweight_nobtag
+    '(sf_b_pt_bin * (probe_gen_numB > 0) + 1 * (probe_gen_numB == 0))'
+mcweight_lightb * mcweight_nobtag
+    '(1 * (probe_gen_numB > 0) + sf_b_pt_bin * (probe_gen_numB == 0))'
+: heavy_pt_0_150 notrig mcweight_lightb , 
+: heavy_pt_150_250 notrig mcweight_lightb , 
+: heavy_pt_250_inf notrig mcweight_lightb , 
+: light_pt_0_150 notrig mcweight_heavyb , 
+: light_pt_150_250 notrig mcweight_heavyb , 
+: light_pt_250_inf notrig mcweight_heavyb , 

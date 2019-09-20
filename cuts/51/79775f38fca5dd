@@ -1,0 +1,10 @@
+mcweight * '1'
+leptons && 'lep1_pt > 20'
+    'lep2_pt > 20'
+    '(lep1_q + lep2_q) == 0'
+iso && 'lep1_minireliso < 0.25'
+    'lep2_minireliso < 0.25'
+smearplot && leptons
+    iso
+trig && 'trigger'
+: smearplot trig smearplot , 

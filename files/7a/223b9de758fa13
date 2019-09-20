@@ -1,0 +1,20 @@
+MC
+
+tt; TT; 1; 798
+
+TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8 {88.288}
+TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8 {365.399}
+
+MC
+
+zj; Z + light; n_genB == 0; 901
+zjb; Z + b; n_genB == 1; 606
+zjbb; Z + bb; n_genB > 1; 624
+
+ZJetsToNuNu_HT-100To200_13TeV-madgraph {280.5}
+ZJetsToNuNu_HT-200To400_13TeV-madgraph {77.7}
+ZJetsToNuNu_HT-400To600_13TeV-madgraph {10.71}
+ZJetsToNuNu_HT-600To800_13TeV-madgraph {2.562}
+ZJetsToNuNu_HT-800To1200_13TeV-madgraph {1.183}
+ZJetsToNuNu_HT-1200To2500_13TeV-madgraph {0.286}
+ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph {0.006945}

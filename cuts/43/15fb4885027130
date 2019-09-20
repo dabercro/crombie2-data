@@ -1,0 +1,52 @@
+mcweight * 'sf_met_trigger'
+    'ewk_z'
+    'ewk_w'
+    'wkfactor'
+    'zkfactor'
+    'vh_ewk'
+    'sf_tt'
+    'mc_weight'
+    'pdf'
+jetpt && 'daughter_max_pt > 60'
+    'daughter_min_pt > 35'
+common && 'hbb_m_reg_old < 500'
+    jetpt
+    'jet2_deepCSV > 0.1241'
+    'dphi_uh > 2.'
+    'hbb_pt_reg_old > 120'
+    metcut
+    metphi
+metcut && 'recoil > 170'
+    'met_filter == 1'
+tt && common
+    'n_lep_tight == 1'
+    'n_centerjet >= 4'
+    'jet1_deepCSV > 0.4184'
+    'min_dphi_recoilb < 1.57'
+trig && 'met_trigger'
+zcommon && metcut
+    common
+    'n_lep_presel == 0'
+    'min_dphi_metj_hard > 0.5'
+    'dphi_met_dztrkmet < 0.5'
+lightz && zcommon
+    'jet1_deepCSV < 0.4184'
+    'n_centerjet < 4'
+siglike && zcommon
+    'jet1_deepCSV > 0.7527'
+    'n_centerjet < 3'
+heavyz && siglike
+    !masswindow
+signal && siglike
+    masswindow
+blind * '0'
+masswindow && '60 < hbb_m_reg_old'
+    '160 > hbb_m_reg_old'
+mcweight_wpu * mcweight
+    'sf_pu'
+    'sf_b_pt_bin'
+metphi || 'recoilphi > 5.8'
+    'recoilphi < 4.8'
+: tt trig mcweight_wpu
+: heavyz trig mcweight_wpu
+: lightz trig mcweight_wpu

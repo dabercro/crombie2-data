@@ -1,0 +1,34 @@
+mcweight * 'sf_pu'
+    'sf_met_trigger'
+    'ewk_z'
+    'ewk_w'
+    'wkfactor'
+    'zkfactor'
+    'vh_ewk'
+    'sf_tt'
+    'mc_weight'
+    'pdf'
+    'sf_b_pt_eta_v2_bin'
+jetpt && 'daughter_max_pt > 60'
+    'daughter_min_pt > 35'
+common && jetpt
+    'jet2_deepCSV > 0.1241'
+    'dphi_uh > 1.8'
+    'hbb_pt_reg_old > 100'
+    metcut
+metcut && 'recoil > 170'
+    'met_filter == 1'
+trig && 'met_trigger'
+zcommon && common
+    'n_lep_presel == 0'
+    'min_dphi_metj_hard > 0.5'
+    'dphi_met_dztrkmet < 0.5'
+lightz && zcommon
+    'n_centerjet < 4'
+blind * '0'
+training && 'eventNumber % 2 == 1'
+light_training && lightz
+    training
+mcweight_training * mcweight
+    '2'
+: light_training blind mcweight_training , 

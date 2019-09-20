@@ -1,0 +1,115 @@
+no_sf_pu * 'ewk_z'
+    'ewk_w'
+    'wkfactor'
+    'zkfactor'
+    'sf_tt'
+    'mc_weight'
+    'pdf'
+mcweight_nobtag * no_sf_pu
+    'sf_pu'
+jetpt && 'daughter_max_pt > 60'
+    'daughter_min_pt > 35'
+leptons && 'n_lep_tight > 0'
+    'n_lep_loose == 2'
+n_jets && 'n_jet == 2'
+trig && 'met_trigger'
+common && jetpt
+    leptons
+    n_jets
+tt && common
+    'tag_deepCSVb > 0.4'
+    !dimuon
+    !diele
+    'pfmet > 100'
+z && common
+    'tag_deepCSVb < 0.4'
+    dimuon
+notrig && '1'
+dimuon && 'muon2 + muon1 == 2'
+    '!ele1'
+    'dimuon_m > 60'
+    'dimuon_m < 120'
+diele && 'ele2 + ele1 == 2'
+    '!muon1'
+    'diele_m > 60'
+    'diele_m < 120'
+pt_0_150 && 'probe_pt <= 150'
+pt_150_250 && 'probe_pt > 150'
+    'probe_pt <= 250'
+pt_250_inf && 'probe_pt > 250'
+eta_0_0p8 && 'abs(probe_eta) < 0.8'
+eta_0p8_1p6 && 'abs(probe_eta) >= 0.8'
+    'abs(probe_eta) < 1.6'
+eta_1p6_2p4 && 'abs(probe_eta) >= 1.6'
+heavy_pt_0_150_eta_0_0p8 && tt
+    pt_0_150
+    eta_0_0p8
+heavy_pt_150_250_eta_0_0p8 && tt
+    pt_150_250
+    eta_0_0p8
+heavy_pt_250_inf_eta_0_0p8 && tt
+    pt_250_inf
+    eta_0_0p8
+heavy_pt_0_150_eta_0p8_1p6 && tt
+    pt_0_150
+    eta_0p8_1p6
+heavy_pt_150_250_eta_0p8_1p6 && tt
+    pt_150_250
+    eta_0p8_1p6
+heavy_pt_250_inf_eta_0p8_1p6 && tt
+    pt_250_inf
+    eta_0p8_1p6
+heavy_pt_0_150_eta_1p6_2p4 && tt
+    pt_0_150
+    eta_1p6_2p4
+heavy_pt_150_250_eta_1p6_2p4 && tt
+    pt_150_250
+    eta_1p6_2p4
+heavy_pt_250_inf_eta_1p6_2p4 && tt
+    pt_250_inf
+    eta_1p6_2p4
+light_pt_0_150_eta_0_0p8 && z
+    pt_0_150
+    eta_0_0p8
+light_pt_150_250_eta_0_0p8 && z
+    pt_150_250
+    eta_0_0p8
+light_pt_250_inf_eta_0_0p8 && z
+    pt_250_inf
+    eta_0_0p8
+light_pt_0_150_eta_0p8_1p6 && z
+    pt_0_150
+    eta_0p8_1p6
+light_pt_150_250_eta_0p8_1p6 && z
+    pt_150_250
+    eta_0p8_1p6
+light_pt_250_inf_eta_0p8_1p6 && z
+    pt_250_inf
+    eta_0p8_1p6
+light_pt_0_150_eta_1p6_2p4 && z
+    pt_0_150
+    eta_1p6_2p4
+light_pt_150_250_eta_1p6_2p4 && z
+    pt_150_250
+    eta_1p6_2p4
+light_pt_250_inf_eta_1p6_2p4 && z
+    pt_250_inf
+    eta_1p6_2p4
+: heavy_pt_0_150_eta_0_0p8 notrig mcweight_nobtag
+: heavy_pt_150_250_eta_0_0p8 notrig mcweight_nobtag
+: heavy_pt_250_inf_eta_0_0p8 notrig mcweight_nobtag
+: heavy_pt_0_150_eta_0p8_1p6 notrig mcweight_nobtag
+: heavy_pt_150_250_eta_0p8_1p6 notrig mcweight_nobtag
+: heavy_pt_250_inf_eta_0p8_1p6 notrig mcweight_nobtag
+: heavy_pt_0_150_eta_1p6_2p4 notrig mcweight_nobtag
+: heavy_pt_150_250_eta_1p6_2p4 notrig mcweight_nobtag
+: heavy_pt_250_inf_eta_1p6_2p4 notrig mcweight_nobtag
+: light_pt_0_150_eta_0_0p8 notrig mcweight_nobtag
+: light_pt_150_250_eta_0_0p8 notrig mcweight_nobtag
+: light_pt_250_inf_eta_0_0p8 notrig mcweight_nobtag
+: light_pt_0_150_eta_0p8_1p6 notrig mcweight_nobtag
+: light_pt_150_250_eta_0p8_1p6 notrig mcweight_nobtag
+: light_pt_250_inf_eta_0p8_1p6 notrig mcweight_nobtag
+: light_pt_0_150_eta_1p6_2p4 notrig mcweight_nobtag
+: light_pt_150_250_eta_1p6_2p4 notrig mcweight_nobtag
+: light_pt_250_inf_eta_1p6_2p4 notrig mcweight_nobtag

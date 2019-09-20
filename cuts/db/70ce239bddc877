@@ -1,0 +1,14 @@
+unity * '1'
+dilep && 'n_lep_medium > 1'
+    'n_lep_tight > 0'
+genb && 'jet1_gen_numB'
+regression && dilep
+    genb
+    cleaning
+cleaning && 'fabs(jet1_gen_withnu_eta-jet1_eta) < 0.05'
+    'fabs(TVector2::Phi_mpi_pi(jet1_gen_withnu_phi-jet1_phi)) < 0.05'
+    'jet1_gen_withnu_m/jet1_m < 2'
+    'jet1_gen_withnu_m/jet1_m > 0.4'
+    'jet1_gen_withnu_pt/jet1_pt < 1.8'
+    'jet1_gen_withnu_pt/jet1_pt > 0.6'
+: regression unity unity , 

@@ -1,0 +1,52 @@
+no_sf_pu * 'ewk_z'
+    'ewk_w'
+    'wkfactor'
+    'zkfactor'
+    'sf_tt'
+    'mc_weight'
+    'pdf'
+mcweight_nobtag * no_sf_pu
+    'sf_pu'
+jetpt && 'daughter_max_pt > 60'
+    'daughter_min_pt > 35'
+leptons && 'n_lep_tight > 0'
+    'n_lep_loose == 2'
+n_jets && 'n_jet == 2'
+trig && 'met_trigger'
+common && jetpt
+    leptons
+    n_jets
+tt && common
+    'tag_deepcsv > 0.6'
+    !dimuon
+    !diele
+z && common
+    'tag_deepcsv < 0.4'
+    dimuon
+notrig && '1'
+dimuon && 'muon2 + muon1 == 2'
+    '!ele1'
+    'dimuon_m > 60'
+    'dimuon_m < 120'
+diele && 'ele2 + ele1 == 2'
+    '!muon1'
+    'diele_m > 60'
+    'diele_m < 120'
+tt_30_70 && tt
+    '((tag_deepcsv > probe_deepcsv && jet2_pt > 30 && jet2_pt < 70) + (probe_deepcsv > tag_deepcsv && jet1_pt > 30 && jet1_pt < 70))'
+tt_70_100 && tt
+    '((tag_deepcsv > probe_deepcsv && jet2_pt > 70 && jet2_pt < 100) + (probe_deepcsv > tag_deepcsv && jet1_pt > 70 && jet1_pt < 100))'
+tt_100_150 * tt
+    '((tag_deepcsv > probe_deepcsv && jet2_pt > 100 && jet2_pt < 150) + (probe_deepcsv > tag_deepcsv && jet1_pt > 100 && jet1_pt < 150))'
+tt_150_250 && tt
+    '((tag_deepcsv > probe_deepcsv && jet2_pt > 150 && jet2_pt < 250) + (probe_deepcsv > tag_deepcsv && jet1_pt > 150 && jet1_pt < 250))'
+tt_250_up && tt
+    '((tag_deepcsv > probe_deepcsv && jet2_pt > 250) + (probe_deepcsv > tag_deepcsv && jet1_pt > 250))'
+: tt notrig mcweight_nobtag
+: z notrig mcweight_nobtag
+: common notrig mcweight_nobtag
+: tt_30_70 notrig mcweight_nobtag
+: tt_70_100 notrig mcweight_nobtag
+: tt_100_150 notrig mcweight_nobtag
+: tt_150_250 notrig mcweight_nobtag
+: tt_250_up notrig mcweight_nobtag

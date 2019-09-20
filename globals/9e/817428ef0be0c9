@@ -1,0 +1,6 @@
+/data/t3home000/dabercro/hbb/190501_013/
+6
+events
+56100
+hSumW
+perl -nae '/t->Branch\(.*, &(\w*)/ && print "$1\n"' /home/dabercro/hbb/slimmer/include/hbbfile.h

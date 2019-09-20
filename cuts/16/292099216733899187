@@ -1,0 +1,19 @@
+mcweight * 'sf_pu'
+    'sf_met_trigger'
+    'ewk_z'
+    'ewk_w'
+    'wkfactor'
+    'zkfactor'
+    'vh_ewk'
+    'sf_tt'
+    'mc_weight'
+    'pdf'
+    'btag_sf'
+jetpt && 'daughter_max_pt > 60'
+    'daughter_min_pt > 35'
+common && 'hbb_m_reg_old < 500'
+    jetpt
+    jet2_btagloose
+    'dphi_uh > 2.'
+    'hbb_pt_reg_old > 120'
+: tt mcweight trig

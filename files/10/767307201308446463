@@ -1,0 +1,26 @@
+DATA
+
+data_obs; Data; 1; 0
+
+SingleMuon {0}
+
+MC
+
+wj; W + light; n_genB == 0; 886
+wjb; W + b; n_genB == 1; 888
+wjbb; W + bb; 1; 883
+
+WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8 {56000}
+
+MC
+
+
+
+MC
+
+st; Single Top; 1; 799
+
+ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8 {69.09}
+ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8 {115.3}
+ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8 {34.91}
+ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8 {34.91}

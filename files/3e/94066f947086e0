@@ -1,0 +1,64 @@
+DATA
+
+data_obs; Data; 1; 1
+
+../190819_chsjets_data2018_014/MET {0}
+
+MC
+
+wj; W + light; n_genB == 0; 886
+wjb; W + b; n_genB == 1; 888
+wjbb; W + bb; n_genB > 1; 883
+
+WJetsToLNu_HT-100To200_TuneCP5_13TeV-madgraphMLM-pythia8 {1343}
+WJetsToLNu_HT-200To400_TuneCP5_13TeV-madgraphMLM-pythia8 {359.6}
+WJetsToLNu_HT-400To600_TuneCP5_13TeV-madgraphMLM-pythia8 {48.85}
+WJetsToLNu_HT-600To800_TuneCP5_13TeV-madgraphMLM-pythia8 {12.05}
+WJetsToLNu_HT-800To1200_TuneCP5_13TeV-madgraphMLM-pythia8 {5.501}
+WJetsToLNu_HT-1200To2500_TuneCP5_13TeV-madgraphMLM-pythia8 {1.329}
+WJetsToLNu_HT-2500ToInf_TuneCP5_13TeV-madgraphMLM-pythia8 {0.03216}
+
+MC
+
+tt; TT; 1; 798
+
+TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8 {88.288}
+TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8 {365.399}
+
+MC
+
+st; Single Top; 1; 799
+
+ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8 {69.09}
+ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8 {115.3}
+ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8 {34.91}
+ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8 {34.91}
+
+MC
+
+zj; Z + light; n_genB == 0; 901
+zjb; Z + b; n_genB == 1; 606
+zjbb; Z + bb; n_genB > 1; 624
+
+ZJetsToNuNu_HT-100To200_13TeV-madgraph {280.5}
+ZJetsToNuNu_HT-200To400_13TeV-madgraph {77.7}
+ZJetsToNuNu_HT-400To600_13TeV-madgraph {10.71}
+ZJetsToNuNu_HT-600To800_13TeV-madgraph {2.562}
+ZJetsToNuNu_HT-800To1200_13TeV-madgraph {1.183}
+ZJetsToNuNu_HT-1200To2500_13TeV-madgraph {0.286}
+ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph {0.006945}
+
+SIGNAL
+
+hbb; ZH; 1; 2
+
+ggZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8 {0.014366}
+ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8 {0.08912}
+
+MC
+
+vv; Diboson; 1; 851
+
+WW_TuneCP5_13TeV-pythia8 {118.7}
+WZ_TuneCP5_13TeV-pythia8 {47.13}
+ZZ_TuneCP5_13TeV-pythia8 {16.523}

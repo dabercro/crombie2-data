@@ -1,0 +1,11 @@
+DATA
+
+data_obs; Data; 1; 1
+
+../190906_smeartree_puppi_014/DoubleMuon {0}
+
+MC
+
+dy; DY; 1; 425
+
+DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8 {6473}

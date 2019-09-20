@@ -1,0 +1,4 @@
+'signal_hbb_m_190723_origin'; Original Network; 1
+'signal_hbb_m_190723_puppi'; With PUPPI; 2
+'signal_hbb_m_190725_lstm_pf'; LSTM; 3
+'signal_hbb_m_190724_puppi_direction'; PUPPI Direction; 4

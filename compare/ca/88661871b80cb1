@@ -1,0 +1,4 @@
+'signal_hbb_m_190723_origin'; Original Network; 4
+'signal_hbb_m_190723_puppi'; With PUPPI; 2
+'signal_hbb_m_190725_lstm_pf'; LSTM; 3
+'signal_hbb_m'; No Regression; 1

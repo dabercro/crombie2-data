@@ -1,0 +1,2 @@
+'npv', 60, 0, 60, 'NPV'
+'min_dphi_metj_soft', 32, 0, 3.2, 'min(\Delta R(U, j))'

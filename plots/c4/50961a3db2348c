@@ -1,0 +1,3 @@
+'jet1_eta', 30, -2.5, 5, 'Jet 1 #eta'
+'jet2_deepCSVb', 20, 0, 1, 'Jet 2 Deep CSV'
+'jet1_deepCSVb', 20, 0, 1, 'Jet 1 Deep CSV'

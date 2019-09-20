@@ -1,0 +1,7 @@
+mcweight * sf_pu
+    sf_met_trigger
+    ewk_z
+    ewk_w
+    wkfactor
+    zhfactor
+: tt mcweight trig

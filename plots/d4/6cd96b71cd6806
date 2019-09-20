@@ -1,0 +1,7 @@
+'dilep_corr_m', 30, 60, 120, 'm_{ll} [GeV]'
+'jet1_pt/dilep_corr_pt', 20, 0, 2, 'p_{T, jet}/p{T, ll}'
+'jet2_pt/jet1_pt', 20, 0, 1, '#alpha'
+'pfmet', 20, 0, 100, 'MET [GeV]'
+'lep1_corrpt', 20, 20, 120, 'p_{T, l1} [GeV]'
+'lep2_corrpt', 20, 20, 120, 'p_{T, l2} [GeV]'
+'dilep_corr_pt', 35, 0, 70, 'p_{T,ll} [GeV]'

@@ -1,0 +1,18 @@
+mcweight * 'weight'
+    'trigger'
+leptons && 'lep1_corrpt > 20'
+    'lep2_corrpt > 20'
+    '(lep1_q + lep2_q) == 0'
+    'dilep_corr_pt > 30'
+    'lep1_ismuon'
+    'lep2_ismuon'
+iso && 'lep1_minireliso < 0.25'
+    'lep2_minireliso < 0.25'
+smearplot && leptons
+    iso
+    jet
+trig && 'trigger'
+jet && 'jet1_eta > -2.0'
+    'jet1_eta < 2.0'
+    '!jet2'
+: smearplot trig mcweight , 

@@ -1,0 +1,5 @@
+'probe_deepCSVb', 20, 0, 1, 'Probe Deep CSV'
+'npv', 80, 0, 80, 'NPV'
+'jet1_deepCSVb', 20, 0, 1, 'Jet 1 Deep CSV'
+'jet2_deepCSVb', 20, 0, 1, 'Jet 2 Deep CSV'
+'min_dphi_metj_soft', 32, 0, 3.2, 'min(#DeltaR(MET, j))'

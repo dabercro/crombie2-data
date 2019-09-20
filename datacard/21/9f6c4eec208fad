@@ -1,0 +1,11 @@
+/home/dabercro/datacards
+tt jet2_deepCSV
+lightz jet2_deepCSV
+heavyz jet2_deepCSV
+signal hbb_m_190723_puppi
+UNC
+lumi lnN 1.025 _ _
+diboson lnN 1.3 _ vv
+pileup lnN 1.05 _ _
+RATE
+tt,zj,zjb,zjbb,wj,wjb,wjbb 0.2 5

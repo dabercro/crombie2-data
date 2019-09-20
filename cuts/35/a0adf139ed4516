@@ -1,0 +1,46 @@
+mcweight * 'sf_pu'
+    'sf_met_trigger'
+    'ewk_z'
+    'ewk_w'
+    'wkfactor'
+    'zkfactor'
+    'vh_ewk'
+    'sf_tt'
+    'weight'
+    'pdf'
+    'sf_b_pt_eta_v2_bin'
+jetpt && 'daughter_max_pt > 60'
+    'daughter_min_pt > 35'
+common && 'hbb_m < 500'
+    jetpt
+    'jet2_btagloose'
+    'dphi_uh > 2.'
+    'hbb_pt > 120'
+    metcut
+metcut && 'recoil > 170'
+    'met_filter == 1'
+tt && common
+    'n_lep_tight == 1'
+    'n_centerjet >= 4'
+    'jet1_btagmedium'
+    'min_dphi_recoilb < 1.57'
+trig && 'met_trigger'
+zcommon && metcut
+    common
+    'n_lep_presel == 0'
+    'min_dphi_metj_hard > 0.5'
+    'dphi_met_dztrkmet < 0.5'
+lightz && zcommon
+    'jet1_btagmedium == 0'
+    'n_centerjet < 4'
+siglike && zcommon
+    'jet1_btagtight == 1'
+    'n_centerjet < 3'
+heavyz && siglike
+    !masswindow
+signal && siglike
+    masswindow
+blind * '0'
+masswindow && '60 < hbb_m'
+    '160 > hbb_m'
+: signal trig mcweight , 

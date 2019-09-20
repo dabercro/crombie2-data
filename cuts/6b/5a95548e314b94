@@ -1,0 +1,13 @@
+mcweight * 'weight'
+leptons * 'lep1_pt > 20'
+    'lep2_pt > 20'
+    '(lep1_q + lep2_q) == 0'
+    'dilep_pt > 30'
+iso && 'lep1_minireliso < 0.25'
+    'lep2_minireliso < 0.25'
+smearplot && leptons
+    iso
+    jet
+trig && 'trigger'
+jet && 'fabs(jet1_eta) < 2.0'
+: smearplot trig mcweight , 

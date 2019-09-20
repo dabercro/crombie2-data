@@ -1,0 +1,2 @@
+'jet1_pt', 20, 35, 435, 'Jet 1 p_{T} [GeV]'
+'pfmet', 40, 100, 500, 'E_{T}_{miss} [GeV]'

@@ -1,0 +1,11 @@
+/home/dabercro/datacards
+tt jet1_deepCSV
+lightz jet1_deepCSV
+heavyz jet1_deepCSV
+signal jet1_deepCSV
+UNC
+lumi lnN 1.025 _ _
+diboson lnN 1.3 _ vv
+pileup lnN 1.05 _ _
+RATE
+tt,zj,zjb,zjbb,wj,wjb,wjbb 0.2 5

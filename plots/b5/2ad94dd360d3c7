@@ -1,0 +1,3 @@
+'jet1_pt', 20, 35, 435, 'Jet 1 p_{T} [GeV]'
+'jet2_pt', 20, 35, 435, 'Jet 2 p_{T} [GeV]'
+'pfmet', 30, 0, 600, 'PFMET [GeV]'

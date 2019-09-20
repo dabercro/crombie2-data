@@ -1,0 +1,4 @@
+'jet2_phi', 32, -3.2, 3.2, 'Jet 2 #phi'
+'jet1_phi', 32, -3.2, 3.2, 'Jet 1 #phi'
+'pfmetphi', 32, -3.2, 3.2, 'MET #phi'
+'recoilphi', 32, 0, 6.4, '|U| #phi'
