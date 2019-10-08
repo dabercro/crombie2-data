@@ -1,0 +1,70 @@
+mcweight * 'weight'
+    'beff_sf_3'
+leptons && 'lep1_corrpt > 20'
+    'lep2_corrpt > 20'
+    '(lep1_q + lep2_q) == 0'
+    'dilep_corr_pt > 100'
+    'lep1_ismuon'
+    'lep2_ismuon'
+iso && 'lep1_minireliso < 0.25'
+    'lep2_minireliso < 0.25'
+smearplot && leptons
+    iso
+    jet
+trig && 'trigger_mu'
+jet && 'fabs(jet1_eta) < 2.0'
+    'jet2_pt/dilep_corr_pt < 0.3'
+    'jet1_dphi_ll > 2.8'
+    'jet1_btagDeepB > 0.9'
+alpha_1 && 'jet2_pt/dilep_corr_pt < 0.155'
+    'jet2'
+    'jet2_pt/dilep_corr_pt >= 0.125'
+alpha_2 && 'jet2_pt/dilep_corr_pt < 0.245'
+    'jet2_pt/dilep_corr_pt >= 0.185'
+alpha_3 && 'jet2_pt/dilep_corr_pt < 0.3'
+    'jet2_pt/dilep_corr_pt >= 0.245'
+smearplot_1 && alpha_1
+    smearplot
+smearplot_2 && alpha_2
+    smearplot
+smearplot_3 && alpha_3
+    smearplot
+smearplot_0 && 'jet2_pt/dilep_corr_pt < 0.125'
+    smearplot
+    'jet2'
+smearplot_1b && smearplot
+    alpha_1b
+alpha_1b && 'jet2_pt/dilep_corr_pt < 0.185'
+    'jet2_pt/dilep_corr_pt >= 0.155'
+jet_0 && 'jet1_pt < 125'
+jet_1 && 'jet1_pt >= 125'
+ptplot_0_0 && smearplot_0
+    jet_0
+ptplot_1_0 && smearplot_1
+    jet_0
+ptplot_2_0 && smearplot_2
+    jet_0
+ptplot_3_0 && smearplot_3
+    jet_0
+ptplot_1b_0 && smearplot_1b
+    jet_0
+ptplot_0_1 && smearplot_0
+    jet_1
+ptplot_1_1 && smearplot_1
+    jet_1
+ptplot_2_1 && smearplot_2
+    jet_1
+ptplot_3_1 && smearplot_3
+    jet_1
+ptplot_1b_1 && smearplot_1b
+    jet_1
+: ptplot_0_0 trig mcweight , 
+: ptplot_1_0 trig mcweight , 
+: ptplot_2_0 trig mcweight , 
+: ptplot_3_0 trig mcweight , 
+: ptplot_1b_0 trig mcweight , 
+: ptplot_0_1 trig mcweight , 
+: ptplot_1_1 trig mcweight , 
+: ptplot_2_1 trig mcweight , 
+: ptplot_3_1 trig mcweight , 
+: ptplot_1b_1 trig mcweight , 

@@ -1,0 +1,5 @@
+'jet1_pt/dilep_corr_pt', 25, 0, 2, 'p_{T, jet}/p_{T, ll}'
+'jet1_190723_puppi_ptsmear/dilep_corr_pt', 25, 0, 2, 'p_{T, jet}/p_{T, ll}', 'jet1_tf_190723_puppi_pt/dilep_corr_pt', 'jet1_190723_puppi_ptsmear/dilep_corr_pt'
+'jet1_190723_origin_ptsmear/dilep_corr_pt', 25, 0, 2, 'p_{T, jet}/p_{T, ll}', 'jet1_tf_190723_origin_pt/dilep_corr_pt', 'jet1_190723_origin_ptsmear/dilep_corr_pt'
+'jet1_190904_0_2_ptsmear/dilep_corr_pt', 25, 0, 2, 'p_{T, jet}/p_{T, ll}', 'jet1_tf_190904_0_2_pt/dilep_corr_pt', 'jet1_190904_0_2_ptsmear/dilep_corr_pt'
+'jet1_190725_lstm_pf_ptsmear/dilep_corr_pt', 25, 0, 2, 'p_{T, jet}/p_{T, ll}', 'jet1_tf_190725_lstm_pf_pt/dilep_corr_pt', 'jet1_190725_lstm_pf_ptsmear/dilep_corr_pt'
