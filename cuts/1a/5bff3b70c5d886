@@ -1,0 +1,38 @@
+mcweight * 'genWeight'
+    'bsf_DeepCSVB'
+leptons && 'lep1_pt > 20'
+    'lep2_pt > 20'
+    '(lep1_q + lep2_q) == 0'
+    'dilep_pt > 100'
+iso && 'lep1_miniPFRelIso_all < 0.25'
+    'lep2_miniPFRelIso_all < 0.25'
+smearplot && leptons
+    iso
+    jet
+    'jet2'
+trig && 'trigger'
+jet && 'fabs(jet1_eta) < 2.0'
+    'alpha < 0.3'
+    'jet1_dphi_ll > 2.8'
+    'jet1_btagDeepB > 0.9'
+alpha_1 && 'alpha < 0.155'
+    'jet2'
+    'alpha >= 0.125'
+alpha_2 && 'alpha < 0.245'
+    'alpha >= 0.185'
+alpha_3 && 'alpha < 0.3'
+    'alpha >= 0.245'
+smearplot_1 && alpha_1
+    smearplot
+smearplot_2 && alpha_2
+    smearplot
+smearplot_3 && alpha_3
+    smearplot
+smearplot_0 && 'alpha < 0.125'
+    smearplot
+    'jet2'
+smearplot_1b && smearplot
+    alpha_1b
+alpha_1b && 'alpha < 0.185'
+    'alpha >= 0.155'
+: smearplot trig mcweight , 

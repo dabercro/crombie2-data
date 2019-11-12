@@ -1,0 +1,6 @@
+'tf_191022_vae_test_prob_hbb_gen_no', 21, 0, 1.05, 'not Hbb'
+'tf_191022_vae_test_prob_hbb_gen_yes', 21, 0, 1.05, 'Hbb'
+'tf_191022_vae_test_prob_ttbar_no', 21, 0, 1.05, 'not tt'
+'tf_191022_vae_test_prob_ttbar_yes', 21, 0, 1.05, 'tt'
+'tf_191022_vae_test_prob_vector_no', 21, 0, 1.05, 'not vector'
+'tf_191022_vae_test_prob_vector_yes', 21, 0, 1.05, 'vector'
