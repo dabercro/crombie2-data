@@ -1,0 +1,20 @@
+mcweight * 'weight'
+    'beff_sf_3'
+leptons && 'lep1_corrpt > 20'
+    'lep2_corrpt > 20'
+    '(lep1_q + lep2_q) == 0'
+    'dilep_corr_pt > 100'
+    'lep1_ismuon'
+    'lep2_ismuon'
+iso && 'lep1_minireliso < 0.25'
+    'lep2_minireliso < 0.25'
+smearplot && leptons
+    iso
+    jet
+    'jet2'
+trig && 'trigger_mu'
+jet && 'fabs(jet1_eta) < 2.0'
+    'jet2_pt/dilep_corr_pt < 0.3'
+    'jet1_dphi_ll > 2.8'
+    'jet1_btagDeepB > 0.9'
+: smearplot trig mcweight , 
