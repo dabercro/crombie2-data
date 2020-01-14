@@ -1,0 +1,12 @@
+DATA
+
+data_obs; Data; 1; 1
+
+DoubleMuon {0}
+EGamma {0}
+
+MC
+
+tt; TT; 1; 890
+
+TTTo2L2Nu_TuneCP5_PSweights_13TeV-powheg-pythia8 {88.288}

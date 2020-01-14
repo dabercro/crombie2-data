@@ -1,0 +1,4 @@
+'jet1_btagDeepB', 25, -0.1, 1.1, 'B tag' | 0.9
+'jet2_btagDeepB', 25, -0.1, 1.1, 'B tag' | 0.9
+'jet1_btagDeepFlavB', 25, -0.1, 1.1, 'B tag' | 0.9
+'jet2_btagDeepFlavB', 25, -0.1, 1.1, 'B tag' | 0.9

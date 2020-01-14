@@ -1,0 +1,15 @@
+scale_weight PROCESS :
+scale_weight_0
+scale_weight_1
+scale_weight_2
+scale_weight_3
+scale_weight_4
+scale_weight_5
+scale_weight_6
+scale_weight_7
+scale_weight_8
+ps_weight :
+ps_weight_0 * LHE_weight_orig
+ps_weight_1 * LHE_weight_orig
+ps_weight_2 * LHE_weight_orig
+ps_weight_3 * LHE_weight_orig

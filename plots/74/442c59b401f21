@@ -1,0 +1,2 @@
+'alpha', 25, 0, 0.5, '#alpha'
+'alpha_with_lines', 25, 0, 0.5, '#alpha', 'alpha', 'alpha' | 0.155 0.185 0.23 0.3

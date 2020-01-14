@@ -1,0 +1,18 @@
+mcweight * 'genWeight'
+    'bsf_CSVV2'
+    'sf_pu'
+leptons && 'lep1_pt > 20'
+    'lep2_pt > 20'
+    '(lep1_q + lep2_q) == 0'
+    'dilep_pt > 100'
+iso && 'lep1_miniPFRelIso_all < 0.25'
+    'lep2_miniPFRelIso_all < 0.25'
+smearplot && leptons
+    iso
+    jet
+trig && 'trigger'
+jet && 'fabs(jet1_eta) < 2.4'
+    'alpha < 0.3'
+    'jet1_dphi_ll > 2.8'
+    'jet1_btagDeepB > 0.9'
+: smearplot trig mcweight , 

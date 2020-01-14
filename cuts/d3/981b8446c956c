@@ -1,0 +1,21 @@
+mcweight * 'genWeight'
+    'bsf_DeepCSVB'
+    'sf_pu'
+leptons && 'lep1_pt > 20'
+    'lep2_pt > 20'
+    '(lep1_q + lep2_q) == 0'
+    'dilep_pt > 100'
+iso && 'lep1_miniPFRelIso_all < 0.25'
+    'lep2_miniPFRelIso_all < 0.25'
+leppeak && leptons
+    iso
+    jet
+trig && 'trigger'
+jet && 'jet2_btagDeepB > 0.9'
+met && 'pfmet > 170'
+    '!lep1'
+metpeak && jet
+    met
+notrig && '1'
+: leppeak trig mcweight , 
+: metpeak notrig mcweight , 

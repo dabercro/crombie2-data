@@ -1,0 +1,4 @@
+'jet1_response', 25, 0, 2, 'p_{T, jet}/p_{T, ll}'
+'dilep_m', 20, 0, 200, 'm_{#ell#ell} [GeV]'
+'pfmet', 30, 0, 300, 'MET [GeV]'
+'npvs', 60, 0, 60, 'NPV'

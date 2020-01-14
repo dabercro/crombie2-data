@@ -1,0 +1,4 @@
+'leppeak_dijet_m'; No Regression; 1
+'leppeak_dijet_m_reg'; Regression; 2
+'leppeak_dijet_m_nominal'; New Smearing; 3
+'leppeak_dijet_m_old_nominal'; Old Smearing; 4

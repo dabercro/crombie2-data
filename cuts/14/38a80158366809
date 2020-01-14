@@ -1,0 +1,68 @@
+mcweight * 'genWeight'
+    'bsf_CSVV2'
+    'sf_pu'
+leptons && 'lep1_pt > 20'
+    'lep2_pt > 20'
+    '(lep1_q + lep2_q) == 0'
+    'dilep_pt > 100'
+iso && 'lep1_miniPFRelIso_all < 0.25'
+    'lep2_miniPFRelIso_all < 0.25'
+smearplot && leptons
+    iso
+    jet
+    'jet2'
+trig && '1'
+jet && 'fabs(jet1_eta) < 2.4'
+    'alpha < 0.3'
+    'jet1_dphi_ll > 2.8'
+    'jet1_btagDeepB > 0.9'
+alpha_1 && 'alpha < 0.155'
+alpha_2 && 'alpha < 0.185'
+    !alpha_1
+alpha_3 && 'alpha < 0.23'
+    !alpha_1
+    !alpha_2
+alpha_4 && !alpha_1
+    !alpha_2
+    !alpha_3
+smearplot_1 && smearplot
+    alpha_1
+smearplot_2 && smearplot
+    alpha_2
+smearplot_3 && smearplot
+    alpha_3
+smearplot_4 && smearplot
+    alpha_4
+rho_0 && 'rhoAll < 16.5'
+rho_1 && !rho_0
+    'rhoAll < 22'
+rho_2 && !rho_0
+    !rho_1
+rhoplot_1_0 && smearplot_1
+    rho_0
+rhoplot_2_0 && smearplot_2
+    rho_0
+rhoplot_3_0 && smearplot_3
+    rho_0
+rhoplot_4_0 && smearplot_4
+    rho_0
+rhoplot_1_1 && smearplot_1
+    rho_1
+rhoplot_2_1 && smearplot_2
+    rho_1
+rhoplot_3_1 && smearplot_3
+    rho_1
+rhoplot_4_1 && smearplot_4
+    rho_1
+rhoplot_1_2 && smearplot_1
+    rho_2
+rhoplot_2_2 && smearplot_2
+    rho_2
+rhoplot_3_2 && smearplot_3
+    rho_2
+rhoplot_4_2 && smearplot_4
+    rho_2
+: smearplot_1 trig mcweight , 
+: smearplot_2 trig mcweight , 
+: smearplot_3 trig mcweight , 
+: smearplot_4 trig mcweight , 

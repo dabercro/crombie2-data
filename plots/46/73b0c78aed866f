@@ -1,0 +1,5 @@
+'jet1_response', 25, 0, 2, 'p_{T, jet}/p_{T, ll}'
+'jet1_response_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, ll}', 'jet1_response', 'jet1_pt_smeared_nominal/dilep_pt'
+'jet1_response_up', 25, 0, 2, 'p_{T, jet}/p_{T, ll}', 'jet1_response', 'jet1_pt_smeared_up/dilep_pt'
+'jet1_response_down', 25, 0, 2, 'p_{T, jet}/p_{T, ll}', 'jet1_response', 'jet1_pt_smeared_down/dilep_pt'
+'rhoAll', 60, 0, 60, '#rho'

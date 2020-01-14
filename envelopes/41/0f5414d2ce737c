@@ -1,0 +1,5 @@
+ps_weight :
+ps_weight_0 * LHE_weight_orig
+ps_weight_1 * LHE_weight_orig
+ps_weight_2 * LHE_weight_orig
+ps_weight_3 * LHE_weight_orig

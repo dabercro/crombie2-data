@@ -1,0 +1,8 @@
+'leppeak_dijet_m'; Lep; 1
+'leppeak_dijet_m_smear_nominal'; Lep smear; 2
+'metpeak_dijet_m'; MET; 3
+'metpeak_dijet_m_smear_nominal'; MET smear; 4
+'leppeak_dijet_m_scale_nominal'; Lep scale; 5
+'metpeak_dijet_m_scale_nominal'; MET scale; 6
+'leppeak_dijet_m_old_scale_nominal'; Lep old scale; 7
+'metpeak_dijet_m_old_scale_nominal'; MET old scale; 8

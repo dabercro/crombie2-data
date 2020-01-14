@@ -1,0 +1,2 @@
+'jet1_response', 25, 0, 2, 'p_{T, jet}/p_{T, ll}'
+'jet1_pt_regressed', 20, 0, 200, 'p_{T} [GeV]'
