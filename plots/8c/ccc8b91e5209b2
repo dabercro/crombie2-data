@@ -1,0 +1,4 @@
+'FatJet_pt[FatJet_HiggsProducts]', 30, 200, 500, 'p_{T, jet}'
+'MET_pt', 40, 100, 500, 'MET'
+'FatJet_deepTagMD_bbvsLight[FatJet_HiggsProducts]', 24, -0.1, 1.1, 'B Tag bb v light'
+'FatJet_msoftdrop[FatJet_HiggsProducts] ', 20, 0, 200, 'm_{SD} [GeV]'

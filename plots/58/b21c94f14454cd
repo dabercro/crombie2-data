@@ -1,0 +1,2 @@
+'jet1_response', 25, 0, 2, 'p_{T, jet}/p_{T, ll}' <<Before Smearing>>
+'jet1_intrinsic', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_regressed/jet1_gen_pt' <<Intrinsic Response (MC only)>>

@@ -1,0 +1,3 @@
+mcweight * 'genWeight'
+metcut && 'MET_pt > 170'
+fatjetcut && 'FatJet_pt[FatJet_HiggsProducts] > 250'

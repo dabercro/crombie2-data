@@ -1,0 +1,16 @@
+mcweight * 'genWeight'
+    'weight_mettrigSF'
+    'weightJetPUID'
+metcut && 'MET_pt > 170'
+    'fabs(HVdPhi_fit_fallback) > 1.8'
+fatjetcut && 'FatJet_HiggsProducts >= 0'
+    'FatJet_msoftdrop[FatJet_HiggsProducts] > 50'
+    'FatJet_pt[FatJet_HiggsProducts] > 250'
+Zvv && metcut
+    fatjetcut
+trig && 'HLT_PFMET120_PFMHT120_IDTight'
+    'HLT_PFMET120_PFMHT120_IDTight_PFHT60'
+metfilter && 'Flag_METFilters'
+dataweight && trig
+    metfilter
+: Zvv dataweight mcweight , 

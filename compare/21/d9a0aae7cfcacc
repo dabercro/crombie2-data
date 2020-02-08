@@ -1,0 +1,3 @@
+'leppeak_dijet_m'; No Regression; 1
+'leppeak_dijet_m_single_smear_nominal'; Binned Smear; 2
+'leppeak_dijet_m_reg'; No Smearing; 3

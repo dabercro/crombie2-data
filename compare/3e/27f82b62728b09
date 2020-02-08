@@ -1,0 +1,7 @@
+'leppeak_dijet_m'; No Regression; 1
+'leppeak_dijet_m_single_smear_nominal'; Binned Smear; 2
+'leppeak_dijet_m_single_scale_nominal'; Binned Scale; 3
+'leppeak_dijet_m_unbinned_smear_nominal'; Unbinned Smear; 4
+'leppeak_dijet_m_unbinned_scale_nominal'; Unbinned Scale; 5
+'leppeak_dijet_m_old_scale_nominal'; Previous Scale; 6
+'leppeak_dijet_m_reg'; No Smearing; 7

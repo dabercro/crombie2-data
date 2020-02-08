@@ -1,0 +1,7 @@
+mcweight * '1'
+metcut && 'MET_pt > 170'
+fatjetcut && 'FatJet_pt[FatJet_HiggsProducts] > 250'
+Zvv && metcut
+    fatjetcut
+trig && '1'
+: Zvv trig mcweight , 

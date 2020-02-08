@@ -1,0 +1,13 @@
+ps_weight :
+ps_weight_0 * (1 + (LHE_weight_orig - 1) * (genWeight<=1 && genWeight > 0.98))
+ps_weight_1 * (1 + (LHE_weight_orig - 1) * (genWeight<=1 && genWeight > 0.98))
+ps_weight_2 * (1 + (LHE_weight_orig - 1) * (genWeight<=1 && genWeight > 0.98))
+ps_weight_3 * (1 + (LHE_weight_orig - 1) * (genWeight<=1 && genWeight > 0.98))
+scale_weight PROCESS :
+scale_weight_0
+scale_weight_1
+scale_weight_2
+scale_weight_3
+scale_weight_4
+scale_weight_6
+scale_weight_8

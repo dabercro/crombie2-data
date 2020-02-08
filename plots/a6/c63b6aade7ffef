@@ -1,0 +1,6 @@
+'dijet_m', 50, 0, 200, 'di-jet mass [GeV]'
+'dijet_m_single_smear_nominal', 50, 0, 200, 'di-jet mass [GeV]'
+'dijet_m_single_scale_nominal', 50, 0, 200, 'di-jet mass [GeV]'
+'dijet_m_unbinned_smear_nominal', 50, 0, 200, 'di-jet mass [GeV]'
+'dijet_m_unbinned_scale_nominal', 50, 0, 200, 'di-jet mass [GeV]'
+'dijet_m_old_scale_nominal', 50, 0, 200, 'di-jet mass [GeV]'

@@ -1,0 +1,23 @@
+mcweight * 'genWeight'
+    'weight_mettrigSF'
+    'weightJetPUID'
+    'Jet_btagSF'
+metcut && 'MET_pt > 200'
+    'fabs(HVdPhi_fit_fallback) > 1.8'
+fatjetcut && 'FatJet_HiggsProducts >= 0'
+    'nFatJet > 0'
+    'FatJet_pt[FatJet_HiggsProducts] > 250'
+    'FatJet_Msoftdrop[FatJet_HiggsProducts] > 50'
+Zvv && metcut
+    fatjetcut
+    qcdcuts
+trig && 'HLT_PFMET120_PFMHT120_IDTight'
+    'HLT_PFMET120_PFMHT120_IDTight_PFHT60'
+metfilter && 'Flag_METFilters'
+dataweight && trig
+    metfilter
+noaddjet && 'Sum$(pow(TVector2::Phi_mpi_pi(Jet_phi - FatJet_phi[FatJet_HiggsProducts]), 2) + pow(Jet_eta - FatJet_eta[FatJet_HiggsProducts], 2) > pow(0.8, 2)) == 0'
+nolep && 'nAddLeptons == 0'
+btag && 'FatJet_deepTagMD_bbvsLight[FatJet_HiggsProducts] > 0.8'
+qcdcuts && 'Sum$(abs(TVector2::Phi_mpi_pi(Jet_phi - MET_phi)) < 0.2 && Jet_pt > 30) == 0'
+: Zvv dataweight mcweight , 

@@ -1,0 +1,14 @@
+'jet1_response', 25, 0, 2, 'p_{T, jet}/p_{T, ll}' <<Before Smearing>>
+'jet1_intrinsic', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_regressed/jet1_gen_pt' <<Intrinsic Response (MC only)>>
+'jet1_response_single_smear_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_single_smear_nominal/dilep_pt' <<Binned Smear>>
+'jet1_response_single_scale_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_single_scale_nominal/dilep_pt' <<Binned Scale>>
+'jet1_response_unbinned_smear_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_unbinned_smear_nominal/dilep_pt' <<Unbinned Smear>>
+'jet1_response_unbinned_scale_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_unbinned_scale_nominal/dilep_pt' <<Unbinned Scale>>
+'jet1_response_single_smear_down', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_single_smear_down/dilep_pt' <<Binned Smear Down>>
+'jet1_response_single_scale_down', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_single_scale_down/dilep_pt' <<Binned Scale Down>>
+'jet1_response_unbinned_smear_down', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_unbinned_smear_down/dilep_pt' <<Unbinned Smear Down>>
+'jet1_response_unbinned_scale_down', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_unbinned_scale_down/dilep_pt' <<Unbinned Scale Down>>
+'jet1_response_single_smear_up', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_single_smear_up/dilep_pt' <<Binned Smear Up>>
+'jet1_response_single_scale_up', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_single_scale_up/dilep_pt' <<Binned Scale Up>>
+'jet1_response_unbinned_smear_up', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_unbinned_smear_up/dilep_pt' <<Unbinned Smear Up>>
+'jet1_response_unbinned_scale_up', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_response', 'jet1_pt_unbinned_scale_up/dilep_pt' <<Unbinned Scale Up>>
