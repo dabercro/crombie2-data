@@ -1,0 +1,45 @@
+mcweight * 'genWeight'
+    'weight_mettrigSF'
+    'weightJetPUID'
+    'bTagWeightDeepCSV'
+    'TTW'
+    'puWeight'
+    'PrefireWeight'
+dataweight && mcweight
+Zvv && 'Hbb_fjidx > -1'
+    '250 < V_pt'
+    'isZnn == 1'
+    'FatJet_Msoftdrop[max(Hbb_fjidx, 0)] > 50'
+    '250 < FatJet_pt[max(Hbb_fjidx, 0)]'
+btag && '0.8 < FatJet_deepTagMD_bbvsLight[max(Hbb_fjidx, 0)]'
+masswindow && '90 < FatJet_Msoftdrop[max(Hbb_fjidx, 0)]'
+    '150 > FatJet_Msoftdrop[max(Hbb_fjidx, 0)]'
+noaddlep && 'nAddLeptons == 0'
+noaddjet && 'Sum$(Jet_pt > 25 && abs(Jet_eta) < 2.5 && Jet_lepFilter && pow(TVector2::Phi_mpi_pi(Jet_phi - FatJet_phi[max(Hbb_fjidx, 0)]), 2) + pow(Jet_eta - FatJet_eta[max(Hbb_fjidx, 0)], 2) > 1.0) == 0'
+signal && Zvv
+    btag
+    masswindow
+    noaddlep
+    noaddjet
+    'abs(HVdPhi_fit_fallback) > 2.9'
+LABEL: Signal Region
+heavyz && Zvv
+    btag
+    !masswindow
+    noaddlep
+    noaddjet
+LABEL: Z+Heavy CR
+lightz && Zvv
+    !btag
+    noaddlep
+    noaddjet
+LABEL: Z+Light CR
+tt && Zvv
+    btag
+    !noaddlep
+    'Sum$(Jet_pt > 25 && abs(Jet_eta) < 2.5 && Jet_lepFilter && pow(TVector2::Phi_mpi_pi(Jet_phi - FatJet_phi[max(Hbb_fjidx, 0)]), 2) + pow(Jet_eta - FatJet_eta[max(Hbb_fjidx, 0)], 2) > 1.0) > 1'
+LABEL: TT CR
+: signal dataweight mcweight , 
+: heavyz dataweight mcweight , 
+: lightz dataweight mcweight , 
+: tt dataweight mcweight , 

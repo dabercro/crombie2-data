@@ -1,0 +1,23 @@
+DATA
+
+data_obs; Data; 1; 1
+
+single/data {0}
+
+MC
+
+dy; DY; 1; 425
+
+DYJetsToLL_M-50_HT-100to200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 {147.4}
+DYJetsToLL_M-50_HT-200to400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 {40.99}
+DYJetsToLL_M-50_HT-400to600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 {5.678}
+DYJetsToLL_M-50_HT-600to800_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 {1.367}
+DYJetsToLL_M-50_HT-800to1200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 {0.6304}
+DYJetsToLL_M-50_HT-1200to2500_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 {0.1514}
+DYJetsToLL_M-50_HT-2500toInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 {0.003565}
+
+MC
+
+tt; TT; 1; 890
+
+TTTo2L2Nu_TuneCP5_PSweights_13TeV-powheg-pythia8 {88.288}

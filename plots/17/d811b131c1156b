@@ -1,0 +1,8 @@
+'FatJet_pt', 30, 200, 500, 'p_{T}(fj) [GeV]', 'FatJet_pt[max(Hbb_fjidx, 0)]', 'FatJet_pt[max(Hbb_fjidx, 0)]'
+'FatJet_eta', 40, -4, 4, '#eta(fj)', 'FatJet_eta[max(Hbb_fjidx, 0)]', 'FatJet_eta[max(Hbb_fjidx, 0)]'
+'FatJet_Msoftdrop', 20, 0, 200, 'm_{SD} [GeV]', 'FatJet_Msoftdrop[max(Hbb_fjidx, 0)]', 'FatJet_Msoftdrop[max(Hbb_fjidx, 0)]'
+'V_pt', 30, 200, 500, 'p_{T}(V) [GeV]'
+'FatJet_tau21', 20, 0, 1, '#tau_{2}/#tau_{1}', 'FatJet_tau2[max(Hbb_fjidx, 0)]/FatJet_tau1[max(Hbb_fjidx, 0)]', 'FatJet_tau2[max(Hbb_fjidx, 0)]/FatJet_tau1[max(Hbb_fjidx, 0)]'
+'FatJet_tau32', 20, 0, 1, '#tau_{3}/#tau_{2}', 'FatJet_tau3[max(Hbb_fjidx, 0)]/FatJet_tau2[max(Hbb_fjidx, 0)]', 'FatJet_tau3[max(Hbb_fjidx, 0)]/FatJet_tau2[max(Hbb_fjidx, 0)]'
+'FatJet_deepTagMD_bbvsLight', 24, -0.1, 1.1, 'bb v light', 'FatJet_deepTagMD_bbvsLight[max(Hbb_fjidx, 0)]', 'FatJet_deepTagMD_bbvsLight[max(Hbb_fjidx, 0)]'
+'FatJet_deepTagMD_TvsQCD', 24, -0.1, 1.1, 'bb v light', 'FatJet_deepTagMD_TvsQCD[max(Hbb_fjidx, 0)]', 'FatJet_deepTagMD_TvsQCD[max(Hbb_fjidx, 0)]'

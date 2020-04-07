@@ -1,0 +1,2 @@
+'jet1_btagDeepB', 24, -0.1, 1.1, 'b-tag'
+'jet1_btagDeepB_bool', 2, -0.5, 1.5, 'Passes Cut', 'jet1_btagDeepB > 0.7527', 'jet1_btagDeepB > 0.7527'

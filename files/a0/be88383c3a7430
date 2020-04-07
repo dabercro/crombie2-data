@@ -1,0 +1,7 @@
+DATA
+
+data_obs; Data; 1; 1
+
+sum_Run2017_MET_MiniAOD_0 {0}
+sum_Run2017_MET_MiniAOD_1 {0}
+sum_Run2017_MET_MiniAOD_2 {0}

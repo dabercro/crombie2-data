@@ -1,0 +1,12 @@
+MC
+
+zb; Z+b; Sum$(abs(GenJetAK8_partonFlavour) == 5); 5
+zj; Z+Jets; 1; 402
+
+ZJetsToNuNu_HT-100To200_13TeV-madgraph {280.5}
+ZJetsToNuNu_HT-200To400_13TeV-madgraph {77.7}
+ZJetsToNuNu_HT-400To600_13TeV-madgraph {10.71}
+ZJetsToNuNu_HT-600To800_13TeV-madgraph {2.562}
+ZJetsToNuNu_HT-800To1200_13TeV-madgraph {1.183}
+ZJetsToNuNu_HT-1200To2500_13TeV-madgraph {0.286}
+ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph {0.006945}

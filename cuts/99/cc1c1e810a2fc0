@@ -1,0 +1,49 @@
+mcweight * 'genWeight'
+    'weight_mettrigSF'
+    'weightJetPUID'
+    'bTagWeightDeepCSV'
+    'weightLOtoNLO'
+    'TTW'
+    'puWeight'
+    'EWKw'
+    'QCDw'
+dataweight && 'HLT_PFMET120_PFMHT120_IDTight'
+    'HLT_PFMET120_PFMHT120_IDTight_PFHT60'
+    'Flag_METFilters'
+Zvv && 'nFatJets200'
+    '250 < V_pt'
+    'isZnn == 1'
+    'FatJetCand_Msoftdrop_corrected > 50'
+    '250 < FatJetCand_pt'
+btag && '0.8 < FatJetCand_deepTagMD_bbvsLight'
+masswindow && '90 < FatJetCand_Msoftdrop_corrected'
+    '150 > FatJetCand_Msoftdrop_corrected'
+noaddlep && 'nAddLeptons == 0'
+noaddjet && 'nJetsOutsideFatJet == 0'
+signal && Zvv
+    btag
+    masswindow
+    noaddlep
+    noaddjet
+    'abs(TVector2::Phi_mpi_pi(V_phi - FatJetCand_phi)) > 2.9'
+LABEL: Signal Region
+heavyz && Zvv
+    btag
+    !masswindow
+    noaddlep
+    noaddjet
+LABEL: Z+Heavy CR
+lightz && Zvv
+    !btag
+    noaddlep
+    noaddjet
+LABEL: Z+Light CR
+tt && Zvv
+    btag
+    !noaddlep
+    'nJetsOutsideFatJet > 1'
+LABEL: TT CR
+: signal dataweight mcweight , 
+: heavyz dataweight mcweight , 
+: lightz dataweight mcweight , 
+: tt dataweight mcweight , 

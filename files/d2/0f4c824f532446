@@ -1,0 +1,18 @@
+MC
+
+wb; W+b; Sum$(abs(GenJetAK8_partonFlavour) == 5); 81
+wj; W+Jets; 1; 814
+
+WJetsToLNu_HT-100To200_TuneCP5_13TeV-madgraphMLM-pythia8 {1343}
+WJetsToLNu_HT-200To400_TuneCP5_13TeV-madgraphMLM-pythia8 {359.6}
+WJetsToLNu_HT-400To600_TuneCP5_13TeV-madgraphMLM-pythia8 {48.85}
+WJetsToLNu_HT-600To800_TuneCP5_13TeV-madgraphMLM-pythia8 {12.05}
+WJetsToLNu_HT-800To1200_TuneCP5_13TeV-madgraphMLM-pythia8 {5.501}
+WJetsToLNu_HT-1200To2500_TuneCP5_13TeV-madgraphMLM-pythia8 {1.329}
+WJetsToLNu_HT-2500ToInf_TuneCP5_13TeV-madgraphMLM-pythia8 {0.03216}
+
+DATA
+
+w; W inclusive; 1; 400
+
+WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8 {0}
