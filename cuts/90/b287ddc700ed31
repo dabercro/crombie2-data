@@ -1,0 +1,6 @@
+mcweight * 'genWeight'
+fatjet && 'Hbb_fjidx > -1'
+    'FatJet_pt[Hbb_fjidx] > 250'
+    'FatJet_mass[Hbb_fjidx] > 50'
+    'abs(FatJet_eta[Hbb_fjidx]) < 2.5'
+no_b_outside && 'Sum$(Jet_lepFilter && Jet_btagDeepB > 0.4184 && pow(TVector2::Phi_mpi_pi(Jet_phi - FatJet_phi[max(Hbb_fjidx, 0)]), 2) + pow(Jet_eta - FatJet_eta[max(Hbb_fjidx, 0)], 2) > 0.64 && (Jet_pt * Jet_bRegCorr) > 25 && abs(Jet_eta) < 2.5) == 0'

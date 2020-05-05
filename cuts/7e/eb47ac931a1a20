@@ -1,0 +1,42 @@
+mcweight * 'genWeight'
+    'weightJetPUID'
+    'bTagWeightDeepCSV'
+    'weightLOtoNLO'
+    'puWeight'
+trigger || 'HLT_Ele32_WPTight_Gsf_L1DoubleEG'
+    'HLT_IsoMu27'
+fatjet && 'Hbb_fjidx > -1'
+    'FatJet_pt[Hbb_fjidx] > 250'
+    'FatJet_mass[Hbb_fjidx] > 50'
+    'abs(FatJet_eta[Hbb_fjidx]) < 2.5'
+no_b_outside && 'Sum$(Jet_lepFilter && Jet_btagDeepB > 0.4184 && pow(TVector2::Phi_mpi_pi(Jet_phi - FatJet_phi[max(Hbb_fjidx, 0)]), 2) + pow(Jet_eta - FatJet_eta[max(Hbb_fjidx, 0)], 2) > 0.64 && (Jet_pt * Jet_bRegCorr) > 25 && abs(Jet_eta) < 2.5) == 0'
+Wlv && 'isWenu || isWmunu'
+    'V_pt > 250'
+    'lepMetDPhi < 2.0'
+    'nAddLep15_2p5 == 0'
+masswindow && 'FatJet_mass[Hbb_fjidx] > 90'
+    'FatJet_mass[Hbb_fjidx] < 150'
+btag && 'FatJet_deepTagMD_bbvsLight[Hbb_fjidx] > 0.8'
+boosted_Wlv && fatjet
+    Wlv
+tt_boosted_Wlv && boosted_Wlv
+    btag
+    !no_b_outside
+LABEL: TT CR
+Wlf_boosted_Wlv && boosted_Wlv
+    !btag
+    no_b_outside
+LABEL: W+LF CR
+Whf_boosted_Wlv && siglike
+    !masswindow
+LABEL: W+HF CR
+signal_boosted_Wlv && siglike
+    masswindow
+LABEL: Signal
+siglike && boosted_Wlv
+    btag
+    no_b_outside
+: tt_boosted_Wlv trigger mcweight , 
+: Wlf_boosted_Wlv trigger mcweight , 
+: Whf_boosted_Wlv trigger mcweight , 
+: signal_boosted_Wlv trigger mcweight , 

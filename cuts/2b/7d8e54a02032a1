@@ -1,0 +1,37 @@
+mcweight * 'genWeight'
+trigger || 'trigger_single_mu'
+    'trigger_single_ele'
+fatjet && 'fatjet1'
+    'fatjet1_pt > 250'
+    'fatjet1_msoftdrop > 50'
+    'abs(fatjet1_eta) < 2.5'
+no_b_outside && 'fatjet1_num_outside_b == 0'
+Wlv && '(pfmet + lep1_pt) > 250'
+    'TVector2::Phi_mpi_pi(pfmet_phi - lep1_phi) < 2.0'
+    'n_lep_loose == 1'
+masswindow && 'fatjet1_msoftdrop > 90'
+    'fatjet1_msoftdrop < 150'
+btag && 'fatjet1_btagHbb > 0.'
+boosted_Wlv && fatjet
+    Wlv
+tt_boosted_Wlv && boosted_Wlv
+    btag
+    !no_b_outside
+LABEL: TT CR
+Wlf_boosted_Wlv && boosted_Wlv
+    !btag
+    no_b_outside
+LABEL: W+LF CR
+Whf_boosted_Wlv && siglike
+    !masswindow
+LABEL: W+HF CR
+signal_boosted_Wlv && siglike
+    masswindow
+LABEL: Signal
+siglike && boosted_Wlv
+    btag
+    no_b_outside
+: tt_boosted_Wlv trigger mcweight , 
+: Wlf_boosted_Wlv trigger mcweight , 
+: Whf_boosted_Wlv trigger mcweight , 
+: signal_boosted_Wlv trigger mcweight , 

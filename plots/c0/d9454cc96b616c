@@ -1,0 +1,2 @@
+'fatjet1_msoftdrop', 70, 60, 200, 'm_{softdrop} [GeV]'
+'pfmet', 40, 0, 400, 'MET [GeV]'
