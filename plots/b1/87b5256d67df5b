@@ -1,0 +1,16 @@
+'jet1_adjusted_response', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}' <<Before Smearing>>
+'jet1_intrinsic', 25, 0, 2, 'p_{T, jet}/p_{T, genjet}', 'jet1_adjusted_response', 'jet1_pt_regressed/jet1_gen_pt' <<Intrinsic Response (MC only)>>
+'alpha', 60, 0, 0.3, '#alpha'
+'rhoAll', 80, 0, 80, '#rho'
+'jet1_adjusted_response_smeared_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_up', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_down', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_half_adjusted_response_smeared_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_half_adjusted_response_smeared_up', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_half_adjusted_response_smeared_down', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_scaled_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_scaled_up', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_scaled_down', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_half_adjusted_response_smeared_scaled_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_half_adjusted_response_smeared_scaled_up', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_half_adjusted_response_smeared_scaled_down', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'

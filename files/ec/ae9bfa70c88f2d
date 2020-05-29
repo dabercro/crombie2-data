@@ -1,0 +1,95 @@
+DATA
+
+data_obs; Data; 1; 1
+
+single/data {0}
+
+MC
+
+zj0b; Z+0b; Sum$(GenBs _pt>25&&abs(GenBs _eta)<2.6)<1; 402
+zj1b; Z+1b; Sum$(GenBs _pt>25&&abs(GenBs _eta)<2.6)==1; 397
+zj2b; Z+2b; Sum$(GenBs _pt>25&&abs(GenBs _eta)<2.6)>1; 5
+
+ZJetsToNuNu_HT-100To200_13TeV-madgraph {303.4}
+ZJetsToNuNu_HT-200To400_13TeV-madgraph {91.71}
+ZJetsToNuNu_HT-400To600_13TeV-madgraph {13.1}
+ZJetsToNuNu_HT-600To800_13TeV-madgraph {3.248}
+ZJetsToNuNu_HT-800To1200_13TeV-madgraph {1.496}
+ZJetsToNuNu_HT-1200To2500_13TeV-madgraph {0.3425}
+ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph {0.005263}
+DYJetsToLL_M-4to50_HT-100to200_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {204}
+DYJetsToLL_M-4to50_HT-200to400_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {54.39}
+DYJetsToLL_M-4to50_HT-400to600_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {5.697}
+DYJetsToLL_M-4to50_HT-600toInf_TuneCP5_PSWeights_13TeV-madgraphMLM-pythia8 {1.85}
+DYJetsToLL_M-50_HT-100to200_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {160.8}
+DYJetsToLL_M-50_HT-1200to2500_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {0.1514}
+DYJetsToLL_M-50_HT-200to400_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {48.63}
+DYJetsToLL_M-50_HT-2500toInf_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {0.003513}
+DYJetsToLL_M-50_HT-400to600_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {6.982}
+DYJetsToLL_M-50_HT-600to800_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {1.756}
+DYJetsToLL_M-50_HT-800to1200_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8 {0.8094}
+
+MC
+
+st; Single Top; 1; 862
+
+ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-madgraph-pythia8 {3.74}
+ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8 {80.95}
+ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8 {136.02}
+ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8 {35.85}
+ST_tW_top_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8 {35.85}
+
+MC
+
+wj0b; W+0b; Sum$(GenBs _pt>25&&abs(GenBs _eta)<2.6)<1; 814
+wj1b; W+1b; Sum$(GenBs _pt>25&&abs(GenBs _eta)<2.6)==1; 815
+wj2b; W+2b; Sum$(GenBs _pt>25&&abs(GenBs _eta)<2.6)>1; 81
+
+WJetsToLNu_HT-100To200_TuneCP5_13TeV-madgraphMLM-pythia8 {1392}
+WJetsToLNu_HT-200To400_TuneCP5_13TeV-madgraphMLM-pythia8 {410.3}
+WJetsToLNu_HT-400To600_TuneCP5_13TeV-madgraphMLM-pythia8 {57.85}
+WJetsToLNu_HT-600To800_TuneCP5_13TeV-madgraphMLM-pythia8 {12.95}
+WJetsToLNu_HT-800To1200_TuneCP5_13TeV-madgraphMLM-pythia8 {5.45}
+WJetsToLNu_HT-1200To2500_TuneCP5_13TeV-madgraphMLM-pythia8 {1.084}
+WJetsToLNu_HT-2500ToInf_TuneCP5_13TeV-madgraphMLM-pythia8 {0.008067}
+
+MC
+
+tt; TT; 1; 4
+
+TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8 {88.29}
+TTToHadronic_TuneCP5_13TeV-powheg-pythia8 {377.96}
+TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8 {365.34}
+
+MC
+
+qcd; QCD; 1; 613
+
+QCD_HT100to200_TuneCP5_13TeV-madgraphMLM-pythia8 {2.799e+07}
+QCD_HT200to300_TuneCP5_13TeV-madgraphMLM-pythia8 {1.547e+06}
+QCD_HT300to500_TuneCP5_13TeV-madgraphMLM-pythia8 {322600}
+QCD_HT500to700_TuneCP5_13TeV-madgraphMLM-pythia8 {29980}
+QCD_HT700to1000_TuneCP5_13TeV-madgraphMLM-pythia8 {6334}
+QCD_HT1000to1500_TuneCP5_13TeV-madgraphMLM-pythia8 {1088}
+QCD_HT1500to2000_TuneCP5_13TeV-madgraphMLM-pythia8 {99.11}
+QCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8 {20.23}
+
+MC
+
+vv; VV; 1; 13
+
+WWTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8 {50.858}
+WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8 {10.71}
+ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8 {10.88}
+ZZTo2Q2Nu_TuneCP5_13TeV_amcatnloFXFX_madspin_pythia8 {4.033}
+
+SIGNAL
+
+signal; VH; 1; 2
+
+WminusH_HToBB_WToLNu_M125_13TeV_powheg_pythia8 {0.10899}
+WplusH_HToBB_WToLNu_M125_13TeV_powheg_pythia8 {0.17202}
+ZH_HToBB_ZToLL_M125_13TeV_powheg_pythia8 {0.04718}
+ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8 {0.09322}
+ggZH_HToBB_ZToLL_M125_13TeV_powheg_pythia8 {0.01437}
+ggZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8 {0.01437}
