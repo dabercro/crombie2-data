@@ -1,0 +1,2 @@
+'jet2_pt_reg', 25, 0, 150, 'p_{T, trail}'
+'jet2_btagDeepB', 20, 0, 1, 'Deep CSV, trailing'

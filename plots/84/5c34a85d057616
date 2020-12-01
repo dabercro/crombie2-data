@@ -1,0 +1,7 @@
+'jet1_adjusted_response', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}' <<Before Smearing>>
+'jet1_adjusted_response_smeared_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_up', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_down', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_scaled_nominal', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_scaled_up', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
+'jet1_adjusted_response_smeared_scaled_down', 25, 0, 2, 'p_{T, jet}/p_{T, ll + j2}'
